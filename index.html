@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Illustrated Algorithms by Jonas</title>
+</head>
+  <script src="lib/pixi.js"></script>
+<body>
+    <script type="text/javascript">
+     let type = "WebGL"
+     if(!PIXI.utils.isWebGLSupported()){
+         type = "canvas"
+     }
+
+     PIXI.utils.sayHello(type)
+     let app = new PIXI.Application({width: 256, height: 256});
+     document.body.appendChild(app.view);
+    </script>
+</body>
+</html>
